@@ -1,0 +1,15 @@
+.divContact{
+    padding: 2em;
+    text-align: justify;
+}
+
+.btn{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.btn:hover{
+    background-color: bisque;
+    color: black;
+}
