@@ -1,0 +1,50 @@
+.education {
+    margin-top: 100px;
+    margin-right: 20px;
+  }
+
+.educations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+  
+.education-title {
+    font-family: 'Roboto Mono', monospace;
+    color: #ccd6f6;
+    font-weight: 300;
+    text-align: center;
+}
+  
+.education span {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.educationDesc {
+    font-family: 'Roboto Mono', monospace;
+    color: #ccd6f6;
+    max-width: 330px;
+    margin-left: 50px;
+    width: 100%;
+}
+
+.educationTitle li {
+    font-family: 'Roboto Mono', monospace;
+    color: #60f6d3;
+}
+
+.educationDesc {
+    font-family: 'Roboto Mono', monospace;
+    color: #ccd6f6;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .educationDesc span{
+        display: block;
+    }
+}

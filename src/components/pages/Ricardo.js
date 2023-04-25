@@ -5,6 +5,7 @@ import logo from '../../assets/r.png'
 import NavBar from '../layout/NavBar';
 import Projects from '../Projects';
 import Experience from '../Experience';
+import Education from '../Education';
 
 function Ricardo() {
     return (
@@ -22,6 +23,7 @@ function Ricardo() {
 
             <Projects />
             <Experience />
+            <Education />
 
         </div>
     )

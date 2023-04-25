@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
   
 .experience-title {
@@ -20,4 +21,51 @@
     margin: 0 auto;
     text-align: left;
 }
+
   
+
+.experienceTitle li {
+    font-family: 'Roboto Mono', monospace;
+    color: #60f6d3;
+    width: 100%;
+    margin-left: 80px;
+}
+
+.experienceDesc {
+    font-family: 'Roboto Mono', monospace;
+    color: #ccd6f6;
+    width: 100%;
+    max-width: auto;
+    text-align: center;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .experiencies {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .experienceDesc span{
+        display: block;
+        max-width: 100%;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .experienceDesc {
+        padding: 0px;
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .experienceTitle li {
+        margin: 0px;
+    }
+}
