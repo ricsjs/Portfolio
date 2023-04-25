@@ -12,18 +12,7 @@
     background-image: linear-gradient(#54d8bd, white);
 }
 
-.linhaVerticalRight {
-    width: 5px;
-    float: right;
-    height: 1000px;
-    /*Altura da linha*/
-    margin-right: 2em;
 
-    border-left: 2px solid;
-    /* Adiciona borda esquerda na div como ser fosse uma linha.*/
-    box-sizing: border-box;
-    background-image: linear-gradient(#54d8bd, white);
-}
 
 .welcome {
     margin-top: 100px;

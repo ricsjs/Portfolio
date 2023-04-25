@@ -45,15 +45,16 @@ function Projects() {
                 <div className='divProjects'>
                     <div className='content'>
                         <h5 className='h5Title'>
-                            Gerenciador de Tarefas
+                        Gerenciador de Tarefas
                         </h5>
                         <br />
                         <span className='spanDesc'>
                         O Gerenciador de Tarefas foi um pequeno projeto pessoal feito com a biblioteca
-                         className='linkViewProject'ReactJS e banco de dados Firebase no início dos meus estudos em React.
+                        ReactJS e banco de dados Firebase no início dos meus estudos em React.
+
                         </span>
 
-                        <Link className='linkViewProject' to='https://github.com/ricsjs/SistemaVotacao' target='_blank'>Ver Projeto</Link>
+                        <Link className='linkViewProject' to='https://github.com/ricsjs/prime-flix' target='_blank'>Ver Projeto</Link>
 
                     </div>
                 </div>
