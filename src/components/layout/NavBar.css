@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.divRight svg{
+    color: #ccd6f6;
+    margin-right: 15px;
+    font-size: 27px;
+}
+
+.divRight svg:hover{
+    font-size: 29px;
+    cursor: pointer;
+    color: #55d9be;
+    transition: 0.3s;
+}
+
+.imgLogo{
+    height: 150px;
+}
+
+.imgLogo:hover{
+    cursor: pointer;
+}
