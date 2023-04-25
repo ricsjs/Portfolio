@@ -6,6 +6,7 @@ import NavBar from '../layout/NavBar';
 import Projects from '../Projects';
 import Experience from '../Experience';
 import Education from '../Education';
+import Contact from '../Contact';
 
 function Ricardo() {
     return (
@@ -24,6 +25,7 @@ function Ricardo() {
             <Projects />
             <Experience />
             <Education />
+            <Contact />
 
         </div>
     )

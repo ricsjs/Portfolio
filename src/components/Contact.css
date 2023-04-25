@@ -1,0 +1,23 @@
+.containerContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contactTitle{
+    font-family: 'Roboto Mono', monospace;
+    color: #ccd6f6;
+    font-weight: 300;
+    text-align: center;
+}
+
+.spanContact{
+    max-width: auto;
+    margin: 30px;
+    font-family: 'Roboto Mono', monospace;
+    color: #ccd6f6;
+}
