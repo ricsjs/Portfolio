@@ -1,5 +1,7 @@
 import './Ricardo.css'
 
+import { DiHtml5, DiCss3, DiJavascript, DiReact, DiPhp, DiMysql, DiFirebase, DiWordpress, DiBootstrap } from "react-icons/di";
+
 import logo from '../../assets/r.png'
 
 import NavBar from '../layout/NavBar';
@@ -21,6 +23,18 @@ function Ricardo() {
                 trocando conhecimentos sobre o mercado e suas tecnologias, trabalhando em equipe
                 e utilizando metodologias ágeis para criar e manter aplicações web.
             </h4>
+            <div className='techs'>
+                <h5 className='hardskills'>Habilidades:</h5>
+                <DiHtml5 className='iconstechs'/>
+                <DiCss3 className='iconstechs'/>
+                <DiJavascript className='iconstechs'/>
+                <DiReact className='iconstechs' />
+                <DiPhp className='iconstechs' />
+                <DiMysql className='iconstechs'/>
+                <DiFirebase className='iconstechs'/>
+                <DiWordpress className='iconstechs'/>
+                <DiBootstrap className='iconstechs'/>
+            </div>
 
             <Projects />
             <Experience />
