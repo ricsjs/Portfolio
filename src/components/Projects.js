@@ -54,7 +54,7 @@ function Projects() {
 
                         </span>
 
-                        <Link className='linkViewProject' to='https://github.com/ricsjs/prime-flix' target='_blank'>Ver Projeto</Link>
+                        <Link className='linkViewProject' to='https://github.com/ricsjs/task-manager-with-login' target='_blank'>Ver Projeto</Link>
 
                     </div>
                 </div>
