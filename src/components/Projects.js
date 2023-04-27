@@ -45,12 +45,12 @@ function Projects() {
                 <div className='divProjects'>
                     <div className='content'>
                         <h5 className='h5Title'>
-                        Gerenciador de Tarefas
+                        SigManager
                         </h5>
                         <br />
                         <span className='spanDesc'>
-                        O Gerenciador de Tarefas foi um pequeno projeto pessoal feito com a biblioteca
-                        ReactJS e banco de dados Firebase no início dos meus estudos em React.
+                        O SigManager permite que diferentes usuários consigam se cadastrar e fazer login no
+                        sistema, além de adicionar tarefas de forma individualizada.
 
                         </span>
 
