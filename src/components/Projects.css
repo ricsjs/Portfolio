@@ -60,6 +60,7 @@
 .linkViewProject {
     text-decoration: none;
     margin-top: 10px;
+    margin-right: 5px;
     padding: 10px;
     background-color: #112240;
     border: 1px solid #54d8bd;
@@ -93,4 +94,8 @@
 
 .linkViewAllProjecth5 {
     padding-top: 20px;
+}
+
+.iconsview{
+    margin-top: 20px;
 }

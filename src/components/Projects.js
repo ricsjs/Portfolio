@@ -1,5 +1,9 @@
 import './Projects.css'
 
+import { ImEarth } from "react-icons/im";
+import { DiGithubBadge } from "react-icons/di";
+
+
 import { Link } from 'react-router-dom'
 
 function Projects() {
@@ -18,8 +22,11 @@ function Projects() {
                             O sistema de votação foi um projeto desenvolvido para a disciplina de projeto de
                             software, no IFRN. Esse sistema possibilita cadastrar chapas e realizar votações.
                         </span>
-
-                        <Link className='linkViewProject' to='https://github.com/ricsjs/SistemaVotacao' target='_blank'>Ver Projeto</Link>
+                        
+                        <div className='iconsview'>
+                            <Link className='linkViewProject' to='https://github.com/ricsjs/SistemaVotacao' target='_blank'><DiGithubBadge /></Link>
+                        </div>
+                        
 
 
                     </div>
@@ -32,12 +39,14 @@ function Projects() {
                         </h5>
                         <br />
                         <span className='spanDesc'>
-                        O PrimeFlix é um sistema feito em react js de catálogo de filmes, onde você
+                        O PrimeFlix é um sistema feito em ReactJs com a TheMovie DB de catálogo de filmes, onde você
                         consegue ver os 10 filmes que estão em catálogo e adicionar filmes à sua lista.
 
                         </span>
 
-                        <Link className='linkViewProject' to='https://github.com/ricsjs/prime-flix' target='_blank'>Ver Projeto</Link>
+                        <div className='iconsview'>
+                            <Link className='linkViewProject' to='https://github.com/ricsjs/prime-flix' target='_blank'><DiGithubBadge /></Link>
+                        </div>
 
                     </div>
                 </div>
@@ -45,16 +54,19 @@ function Projects() {
                 <div className='divProjects'>
                     <div className='content'>
                         <h5 className='h5Title'>
-                        SigManager
+                        TaskManager
                         </h5>
                         <br />
                         <span className='spanDesc'>
-                        O SigManager permite que diferentes usuários consigam se cadastrar e fazer login no
+                        O TaskManager permite que diferentes usuários consigam se cadastrar e fazer login no
                         sistema, além de adicionar tarefas de forma individualizada.
 
                         </span>
 
-                        <Link className='linkViewProject' to='https://github.com/ricsjs/task-manager-with-login' target='_blank'>Ver Projeto</Link>
+                        <div className='iconsview'>
+                            <Link className='linkViewProject' to='https://github.com/ricsjs/task-manager-with-login' target='_blank'><DiGithubBadge /></Link>
+                            <Link className='linkViewProject' to='https://sigmanager.netlify.app/' target='_blank'><ImEarth /></Link>
+                        </div>
 
                     </div>
                 </div>
