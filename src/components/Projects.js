@@ -59,7 +59,7 @@ function Projects() {
                         </h5>
                         <br />
                         <span className='spanDesc'>
-                        O Calling System consiste é uma aplicação feita em ReactJS em uma aplicação que permite a
+                        O Calling System consiste em uma aplicação web completa feita em ReactJS que permite a
                         criação de chamados e o acompanhamento de sua evolução.
                         </span>
 
