@@ -12,25 +12,7 @@ function Projects() {
             <h1>Meus Projetos</h1>
             <div className="bodyProjects">
 
-                <div className='divProjects'>
-                    <div className='content'>
-                        <h5 className='h5Title'>
-                        PrimeFlix
-                        </h5>
-                        <br />
-                        <span className='spanDesc'>
-                            O PrimeFlix é um sistema feito em ReactJs com a TheMovie DB de catálogo de filmes, onde você
-                            consegue ver os 10 filmes que estão em catálogo e adicionar filmes à sua lista.
-                        </span>
-                        
-                        <div className='iconsview'>
-                            <Link className='linkViewProject' to='https://github.com/ricsjs/prime-flix' target='_blank'><DiGithubBadge /></Link>
-                        </div>
-                        
-
-
-                    </div>
-                </div>
+                
 
                 <div className='divProjects'>
                     <div className='content'>
@@ -66,6 +48,26 @@ function Projects() {
                         <div className='iconsview'>
                             <Link className='linkViewProject' to='https://github.com/ricsjs/calling-system' target='_blank'><DiGithubBadge /></Link>
                             <Link className='linkViewProject' to='https://calling-system.netlify.app/' target='_blank'><ImEarth /></Link>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className='divProjects'>
+                    <div className='content'>
+                        <h5 className='h5Title'>
+                            Git Repository
+                        </h5>
+                        <br />
+                        <span className='spanDesc'>
+                            O Git Repository é uma aplicação web que consome a API do GitHub e permite a adicionar
+                            projetos existentes no github à sua lista, excluir e visualizar detalhes.
+
+                        </span>
+
+                        <div className='iconsview'>
+                            <Link className='linkViewProject' to='https://github.com/ricsjs/repository-project' target='_blank'><DiGithubBadge /></Link>
+                            <Link className='linkViewProject' to='https://gitrepository.netlify.app' target='_blank'><ImEarth /></Link>
                         </div>
 
                     </div>
