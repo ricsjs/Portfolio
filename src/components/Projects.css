@@ -1,6 +1,13 @@
 .projects {
-    margin-top: 100px;
-    text-align: center;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #112240;
 }
 
 .projects h1 {
@@ -13,71 +20,12 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    cursor: grab;
+    overflow: hidden;
+    max-width: 900px;
+    margin-bottom: 3em;
 }
 
-.divProjects {
-    display: flex;
-    justify-content: center;
-    background-color: #112240;
-    color: #c9d3f3;
-    width: 330px;
-    height: 330px;
-    margin-left: 50px;
-
-    border-radius: 10px;
-}
-
-.h5Title {
-    margin-top: 20px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 600;
-    color: #ccd6f6;
-}
-
-.spanDesc {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300px;
-    white-space: pre-line;
-    display: block;
-    margin: 0px 20px;
-    color: #a2adcc;
-}
-
-@media screen and (max-width: 768px) {
-    .bodyProjects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .divProjects {
-        margin: 20px 0;
-        width: 320px;
-    }
-}
-
-
-.linkViewProject {
-    text-decoration: none;
-    margin-top: 10px;
-    margin-right: 5px;
-    padding: 10px;
-    background-color: #112240;
-    border: 1px solid #54d8bd;
-    color: #54d8bd;
-    border-radius: 10px;
-}
-
-.linkViewProject:hover {
-    background-image: linear-gradient(#0a182f, #112240);
-}
-
-.content {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
 
 .linkViewAllProject {
     text-decoration: none;
@@ -92,10 +40,31 @@
     background-image: linear-gradient(#0a182f, #112240);
 }
 
-.linkViewAllProjecth5 {
-    padding-top: 20px;
+.inner{
+    display: flex;
 }
 
-.iconsview{
-    margin-top: 20px;
+.image-item{
+    min-height: 200px;
+    min-width: 400px;
+    padding: 14px;
 }
+
+.image-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 800px){
+    .bodyProjects{
+        width: 90%;
+    }
+
+}
+
+.viewProject{
+    display: none;
+}
+

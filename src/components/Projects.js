@@ -1,82 +1,62 @@
-import './Projects.css'
+import './Projects.css';
 
+import { useState, useEffect, useRef } from 'react';
 import { ImEarth } from "react-icons/im";
 import { DiGithubBadge } from "react-icons/di";
+import { motion } from 'framer-motion';
+import image1 from '../assets/project1.png';
+import image2 from '../assets/project2.png';
+import image3 from '../assets/project3.png';
+import image4 from '../assets/project4.png';
+import { Link } from 'react-router-dom';
 
-
-import { Link } from 'react-router-dom'
+const images = [
+  { image: image1, link: 'https://sigmanager.netlify.app' },
+  { image: image2, link: 'https://calling-system.netlify.app' },
+  { image: image3, link: 'https://gitrepository.netlify.app' },
+  { image: image4, link: 'https://weatherforecastnow.netlify.app' },
+];
 
 function Projects() {
-    return (
-        <div className='projects'>
-            <h1>Meus Projetos</h1>
-            <div className="bodyProjects">
+  const carousel = useRef();
+  const [width, setWidth] = useState(0);
 
-                
+  useEffect(() => {
+    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+  }, []);
 
-                <div className='divProjects'>
-                    <div className='content'>
-                        <h5 className='h5Title'>
-                            TaskManager
-                        </h5>
-                        <br />
-                        <span className='spanDesc'>
-                            O TaskManager permite que diferentes usuários consigam se cadastrar e fazer login no
-                            sistema, além de adicionar tarefas de forma individualizada.
+  return (
+    <div className='projects'>
+      <h1>Meus Projetos</h1>
 
-                        </span>
+      <motion.div className='bodyProjects' whileTap={{ cursor: "grabbing" }}>
+        <motion.div
+          ref={carousel}
+          className='inner'
+          drag="x"
+          dragConstraints={{ left: -700, right: 700 }}
+          initial={{ x: 0 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          {images.map(item => (
+            <motion.div className='image-item' key={item.link}>
+              <Link to={item.link} target='_blank'>
+                <img src={item.image} alt='imagem' />
+                <button className='viewProject'>Ver projeto</button>
+              </Link>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
 
-                        <div className='iconsview'>
-                        <Link className='linkViewProject' to='https://github.com/ricsjs/task-manager-with-login' target='_blank'><DiGithubBadge /></Link>
-                            <Link className='linkViewProject' to='https://sigmanager.netlify.app/' target='_blank'><ImEarth /></Link>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className='divProjects'>
-                    <div className='content'>
-                        <h5 className='h5Title'>
-                            Calling System
-                        </h5>
-                        <br />
-                        <span className='spanDesc'>
-                        O Calling System consiste em uma aplicação web completa feita em ReactJS que permite a
-                        criação de chamados e o acompanhamento de sua evolução.
-                        </span>
-
-                        <div className='iconsview'>
-                            <Link className='linkViewProject' to='https://github.com/ricsjs/calling-system' target='_blank'><DiGithubBadge /></Link>
-                            <Link className='linkViewProject' to='https://calling-system.netlify.app/' target='_blank'><ImEarth /></Link>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className='divProjects'>
-                    <div className='content'>
-                        <h5 className='h5Title'>
-                            Git Repository
-                        </h5>
-                        <br />
-                        <span className='spanDesc'>
-                            O Git Repository é uma aplicação web que consome a API do GitHub e permite a adicionar
-                            projetos existentes no github à sua lista, excluir e visualizar detalhes.
-
-                        </span>
-
-                        <div className='iconsview'>
-                            <Link className='linkViewProject' to='https://github.com/ricsjs/repository-project' target='_blank'><DiGithubBadge /></Link>
-                            <Link className='linkViewProject' to='https://gitrepository.netlify.app' target='_blank'><ImEarth /></Link>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-            <h5 className='h5Title linkViewAllProjecth5'><Link className='linkViewAllProject' to='https://github.com/ricsjs?tab=repositories' target='_blank'>Ver mais projetos</Link></h5>
-        </div>
-    )
+      <h5 className='h5Title linkViewAllProjecth5'>
+        <Link className='linkViewAllProject' to='https://github.com/ricsjs?tab=repositories' target='_blank'>
+          Ver mais projetos
+        </Link>
+      </h5>
+    </div>
+  );
 }
 
 export default Projects;
