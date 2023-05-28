@@ -1,8 +1,6 @@
 import './Projects.css';
 
 import { useState, useEffect, useRef } from 'react';
-import { ImEarth } from "react-icons/im";
-import { DiGithubBadge } from "react-icons/di";
 import { motion } from 'framer-motion';
 import image1 from '../assets/project1.png';
 import image2 from '../assets/project2.png';
@@ -22,6 +20,7 @@ function Projects() {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
+    console.log(width)
     setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
   }, []);
 
