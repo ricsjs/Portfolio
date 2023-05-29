@@ -12,6 +12,8 @@
 
 .apresentation{
     padding-left: 200px;
+    padding-right: 20px;
+    text-align: justify;
 }
 
 .imgApresentation{
@@ -72,6 +74,12 @@
     .apresentation{
         padding: 0px;
         margin-bottom: 3em;
+        padding: 10px;
+    }
+
+    .welcome{
+        margin-top: 0;
+        text-align: center;
     }
 
     .imgApresentation{
