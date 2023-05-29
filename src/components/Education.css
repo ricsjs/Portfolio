@@ -1,50 +1,35 @@
-.education {
-    margin-top: 100px;
-    margin-right: 20px;
-  }
+.containerEducation{
+    width: 100%;
+    background-color: #112240;
+}
 
-.educations{
+.education{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-  
-.education-title {
-    font-family: 'Roboto Mono', monospace;
-    color: #ccd6f6;
-    font-weight: 300;
-    text-align: center;
-}
-  
-.education span {
-    max-width: 300px;
     margin: 0 auto;
-    text-align: center;
-}
-
-.educationDesc {
-    font-family: 'Roboto Mono', monospace;
-    color: #ccd6f6;
-    max-width: 330px;
-    margin-left: 50px;
     width: 100%;
+    max-width: 700px;
+    margin-top: 3em;
+    padding-top: 2em;
+    text-align: justify;
 }
 
-.educationTitle li {
-    font-family: 'Roboto Mono', monospace;
+@media screen and (max-width: 800px){
+    .education{
+        max-width: 300px;
+    }
+}
+
+.educationTitle span{
     color: #60f6d3;
+    font-family: 'Roboto Mono', monospace;
 }
 
-.educationDesc {
+.educationDesc span{
     font-family: 'Roboto Mono', monospace;
     color: #ccd6f6;
 }
 
-
-@media only screen and (max-width: 767px) {
-    .educationDesc span{
-        display: block;
-    }
+.educationDesc{
+    margin-bottom: 2em;
 }

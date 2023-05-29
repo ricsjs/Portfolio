@@ -1,23 +1,30 @@
 .containerContact{
+    width: 100%;
+}
+
+.contact{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: justify;
 }
 
-.contactTitle{
-    font-family: 'Roboto Mono', monospace;
-    color: #ccd6f6;
-    font-weight: 300;
-    text-align: center;
+@media screen and (max-width: 800px){
+    .contact{
+        max-width: 300px;
+    }
 }
 
-.spanContact{
-    max-width: auto;
-    margin: 30px;
+
+.contactDesc span{
     font-family: 'Roboto Mono', monospace;
     color: #ccd6f6;
+}
+
+.contactDesc{
+    margin-bottom: 2em;
 }

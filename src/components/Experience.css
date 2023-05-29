@@ -1,71 +1,40 @@
-.experience {
-    margin-top: 100px;
-  }
-
-.experiencies{
+.experiences{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-top: 3em;
+    text-align: justify;
 }
-  
-.experience-title {
+
+.title{
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width: 800px){
+    .experiences{
+        max-width: 300px;
+    }
+}
+
+.title h1{
     font-family: 'Roboto Mono', monospace;
     color: #ccd6f6;
     font-weight: 300;
     text-align: center;
 }
-  
-.experience span {
-    max-width: 300px;
-    margin: 0 auto;
-    text-align: left;
-}
 
-  
-
-.experienceTitle li {
-    font-family: 'Roboto Mono', monospace;
+.experienceTitle span{
     color: #60f6d3;
-    width: 100%;
-    margin-left: 80px;
+    font-family: 'Roboto Mono', monospace;
 }
 
-.experienceDesc {
+.experienceDesc span{
     font-family: 'Roboto Mono', monospace;
     color: #ccd6f6;
-    width: 100%;
-    max-width: auto;
-    text-align: center;
-    padding-right: 200px;
-    padding-left: 200px;
 }
 
-
-@media only screen and (max-width: 767px) {
-
-    .experiencies {
-        flex-direction: column;
-    }
+.experienceDesc{
+    margin-bottom: 2em;
 }
 
-@media only screen and (max-width: 767px) {
-    .experienceDesc span{
-        display: block;
-        max-width: 100%;
-        margin-right: 50px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .experienceDesc {
-        padding: 0px;
-        padding-left: 50px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .experienceTitle li {
-        margin: 0px;
-    }
-}

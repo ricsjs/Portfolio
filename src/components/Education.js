@@ -1,15 +1,27 @@
 import './Education.css'
 
-function Education(){
-    return(
-        <div className="education">
-            <h1 className="education-title">Formação</h1>
+function Education() {
+    return (
+        <div className='containerEducation'>
 
-            <div className='educations'>
+
+            <div className='education'>
+                <div className='title'>
+                    <h1>Formação</h1>
+                </div>
+
                 <div className='educationTitle'>
-                    <ul>
-                        <li>IFRN - Instituto Federal de Educação, Ciência e Tecnologia do RN</li>
-                    </ul>
+                    <span> UFRN - Universidade Federal do Rio Grande do Norte</span>
+                </div>
+
+                <div className='educationDesc'>
+                    <span>
+                        Sistemas de Informação | 2021 - Atual
+                    </span>
+                </div>
+
+                <div className='educationTitle'>
+                    <span> IFRN - Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte.</span>
                 </div>
 
                 <div className='educationDesc'>
@@ -18,20 +30,8 @@ function Education(){
                     </span>
                 </div>
 
-                <div className='educationTitle'>
-                    <ul>
-                        <li>UFRN - Universidade Federal do Rio Grande do Norte</li>
-                    </ul>
-                </div>
-
-                <div className='educationDesc'>
-                    <span>
-                    Sistemas de Informação | 2021 - atual
-                    </span>
-                </div>
 
             </div>
-            
         </div>
     )
 }

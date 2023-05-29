@@ -20,9 +20,9 @@ function Projects() {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    console.log(width)
+    console.log(width);
     setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
-  }, []);
+  }, [width]);
 
   return (
     <div className='projects'>
