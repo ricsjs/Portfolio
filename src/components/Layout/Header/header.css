@@ -1,0 +1,21 @@
+.ctn-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-left span {
+    font-size: 20px;
+}
+
+.header-right svg {
+    margin-right: .5em;
+    cursor: pointer;
+}
