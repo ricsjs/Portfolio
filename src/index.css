@@ -9,4 +9,6 @@
 
 body {
   background-color: #00002c;
+  width: 100%;
+  height: 100vh;
 }
