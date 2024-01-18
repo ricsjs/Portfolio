@@ -21,7 +21,12 @@ export default function Apresentation() {
                 enfrentar desafios cada vez mais complexos. Além disso, possuo proficiência em React e Golang comprovada em projetos.
                 </span><br /><br />
                 <div className="techs">
-                    <span>Tecnologias: <FaHtml5 size={25}/> <FaCss3Alt size={25}/> <DiJavascript size={25}/> <FaReact size={25}/> <FaPhp size={25}/> <FaGolang size={25}/> <FaDocker size={25}/> <DiMysql size={25}/> <DiPostgresql size={25}/> <FaWordpress size={25}/></span>
+                    <div>
+                        <span>Tecnologias: </span>
+                    </div>
+                    <div>
+                        <FaHtml5 size={25}/> <FaCss3Alt size={25}/> <DiJavascript size={25}/> <FaReact size={25}/> <FaPhp size={25}/> <FaGolang size={25}/> <FaDocker size={25}/> <DiMysql size={25}/> <DiPostgresql size={25}/> <FaWordpress size={25}/>
+                    </div>
                 </div>
             </div>
 
